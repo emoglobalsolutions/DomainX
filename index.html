@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Find your perfect domain with DomainX. Search domain extensions and explore transparent registration pricing.">
+  <title>DomainX — Find Your Digital Identity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="DomainX home"><span class="brand-mark">D<span>X</span></span><span>Domain<span class="brand-x">X</span></span></a>
+    <nav class="nav" id="nav">
+      <a href="#domains">Domains</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Support</a>
+    </nav>
+    <a class="header-cta" href="#search">Find a domain <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="search">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT IDEA STARTS HERE</div>
+        <h1>Claim your space<br>on the <span>internet.</span></h1>
+        <p class="hero-copy">Find a domain that gives your idea a home. Explore popular extensions with clear, upfront pricing.</p>
+        <form class="search-box" id="domainForm">
+          <span class="search-icon">⌕</span>
+          <input id="domainInput" type="text" placeholder="Enter your dream domain name" autocomplete="off" aria-label="Domain name" required>
+          <button type="submit">Search domains <span>→</span></button>
+        </form>
+        <p class="search-note">Try a name like <button class="suggestion" data-name="mybrand">mybrand</button> or <button class="suggestion" data-name="mybusiness">mybusiness</button></p>
+        <div class="trust-row"><span>✓ Transparent pricing</span><span>✓ Simple ordering</span><span>✓ Human support</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="planet"><span>DX</span></div>
+        <div class="floating-card card-com"><b>.com</b><small>Make it global</small></div>
+        <div class="floating-card card-net"><b>.net</b><small>Connect ideas</small></div>
+        <div class="floating-card card-ai"><b>.ai</b><small>Think forward</small></div>
+      </div>
+    </section>
+
+    <section class="results-section hidden" id="resultsSection">
+      <div class="section-heading compact">
+        <div><div class="eyebrow dark-eyebrow">DOMAIN SEARCH</div><h2>Search results</h2></div>
+        <button class="text-button" id="clearResults">Clear results ×</button>
+      </div>
+      <div id="resultsList" class="results-list" aria-live="polite"></div>
+      <p class="notice">These are estimated prices and illustrative search results only. Live availability and final registration costs must be confirmed with a registrar before payment.</p>
+    </section>
+
+    <section class="extensions section" id="domains">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">FIND YOUR EXTENSION</div><h2>Popular domain endings.</h2></div>
+        <p>Choose an extension that fits your brand, audience and ambition.</p>
+      </div>
+      <div class="extension-grid" id="extensionGrid"></div>
+    </section>
+
+    <section class="pricing-band" id="pricing">
+      <div class="pricing-copy">
+        <div class="eyebrow">SIMPLE, CLEAR PRICING</div>
+        <h2>Know what you're paying.</h2>
+        <p>Our initial pricing guide is calculated at 70% of the registrar prices you supplied. Renewal prices can differ from first-year promotional prices.</p>
+        <a class="light-link" href="#domains">Explore domain prices <span>→</span></a>
+      </div>
+      <div class="pricing-stat"><strong>70<span>%</span></strong><span>of supplied registrar price</span><small>Planning price guide</small></div>
+    </section>
+
+    <section class="steps section" id="how">
+      <div class="section-heading centered"><div class="eyebrow dark-eyebrow">GET ONLINE IN SIMPLE STEPS</div><h2>Your domain journey starts here.</h2><p>From choosing a name to completing registration.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-number">01</div><div class="step-icon">⌕</div><h3>Search</h3><p>Enter the name you want and explore suitable extensions.</p></article>
+        <article class="step-card"><div class="step-number">02</div><div class="step-icon">◇</div><h3>Choose</h3><p>Compare estimated first-year and renewal prices before ordering.</p></article>
+        <article class="step-card"><div class="step-number">03</div><div class="step-icon">↗</div><h3>Register</h3><p>Send an order enquiry. Registration is completed after availability, price and payment are confirmed.</p></article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div><div class="eyebrow">NEED A HAND?</div><h2>Let's get your idea<br>its own address.</h2><p>DomainX is powered by Emo Global Solutions.</p></div>
+      <a class="cta-button" href="mailto:emoglobalsolutions@gmail.com?subject=DomainX%20domain%20enquiry">Contact our team <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">D<span>X</span></span><span>Domain<span class="brand-x">X</span></span></a>
+    <p>Find your name. Build your world.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> DomainX. Powered by Emo Global Solutions.</span><span>Domain registration subject to registrar confirmation.</span></div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
